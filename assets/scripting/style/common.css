@@ -1,0 +1,9 @@
+.nav-item {
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.nav-item.active {
+    border-bottom: 3px solid #ffcc00; 
+}
