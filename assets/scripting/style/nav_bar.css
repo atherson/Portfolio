@@ -1,3 +1,4 @@
+/* Navbar Styling */
 .nav-bar-styling {
     position: fixed;
     bottom: 0;
@@ -15,34 +16,43 @@
     margin-bottom: 20px;
     z-index: 1000;
 }
+
+/* Nav Item */
 .nav-item {
     position: relative;
     transition: transform 0.3s ease;
 }
 
 .nav-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2.5px);
 }
 
+/* Icon Background */
 .icon-bg {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     transition: background 0.3s ease;
+    position: relative;
 }
 
 .icon-bg:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Centering Images */
 .icon-bg img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin: auto;
 }
+
+/* Tooltip */
 .tooltip {
     position: absolute;
     bottom: 50px;
@@ -63,4 +73,28 @@
     visibility: visible;
     opacity: 1;
     transform: translateX(-50%) translateY(-5px);
+}
+
+/* Active Nav Item (Underline Effect) */
+.nav-item .icon-bg {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* ONLY active items get an underline – no hover effect */
+.nav-item .icon-bg.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: rgb(136, 255, 0);
+    border-radius: 5px;
+}
+
+/* REMOVE hover underline */
+.nav-item:hover .icon-bg::after {
+    content: none;
 }

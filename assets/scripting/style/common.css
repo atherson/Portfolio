@@ -1,9 +1,86 @@
-.nav-item {
-    position: relative;
-    padding-bottom: 5px;
-    text-decoration: none;
+/* Navbar Styling */
+.nav-bar-styling {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15); /* Glossy look */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
 }
 
-.nav-item.active {
-    border-bottom: 3px solid #ffcc00; 
+/* Nav Item */
+.nav-item {
+    position: relative;
+    text-align: center;
+}
+
+/* Icon Background */
+.icon-bg {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect on Icons */
+.icon-bg:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Icons */
+.icon-bg img {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.4)); /* Soft glow */
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Show Tooltip on Hover */
+.nav-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Active Nav Item (Underline Effect) */
+.icon-bg.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px; /* Space above the line */
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00d4ff); /* Glossy gradient */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 122, 255, 0.6);
 }

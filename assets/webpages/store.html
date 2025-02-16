@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="../scripting/style/style.css">
+    <link rel="stylesheet" href="../scripting/style/shop.css">
     <link rel="icon" type="image/jpg" href="../images/icon/icon.jpg">
     <link rel="stylesheet" href="../scripting/style/common.css">
+    
 </head>
 <body>
     <nav class="nav-bar-styling">
@@ -23,7 +24,7 @@
             <div class="tooltip">Projects</div>
         </div>
         <div class="nav-item">
-            <div class="icon-bg">
+            <div class="icon-bg active">
                 <a href="../webpages/store.html"class="nav-item"><img src="../images/shopping-cart.png"></a>
             </div>
             <div class="tooltip">Shop</div>
@@ -36,11 +37,62 @@
         </div>
         <div class="nav-item">
             <div class="icon-bg">
-                <a href="../webpages/email.html"class="nav-item"><img src="../images/mail.png"></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=athersonfrank5@gmail.com" target="_blank"><img src="../images/mail.png"></a>
             </div>
             <div class="tooltip">Mail</div>
         </div>
     </nav>
-    <script src="../scripting/scripts/common.js"></script>
+    
+  <div class="stars-container"></div>
+  <div class="overlay"></div>
+  
+  <div class="container">
+    <header class="header">
+      <h1>Web Template Shop</h1>
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒
+        <span class="cart-count">0</span>
+      </div>
+    </header>
+
+    <div class="products-grid">
+      <!-- Products will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <div class="cart-modal">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" onclick="toggleCart()">×</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="cart-total">
+      <h3>Total: $<span id="cart-total">0.00</span></h3>
+      <div class="currency-converter">
+        BTC: <span id="btc-total">0.00000000</span>
+      </div>
+    </div>
+    <div class="checkout-methods">
+      <button class="payment-button credit-card">
+        💳 Pay with Credit Card
+      </button>
+      <button class="payment-button paypal">
+        <span>Pay</span><span style="color: #009cde">Pal</span>
+      </button>
+      <button class="payment-button bitcoin">
+        ₿ Pay with Bitcoin
+      </button>
+    </div>
+  </div>
+
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="../video/video_1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+  <script src="../scripting/scripts/common.js"></script>
 </body>
 </html>

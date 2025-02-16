@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="../scripting/style/nav_bar.css">
-    <link rel="stylesheet" href="../scripting/style/proj_nav.css">
-    <link rel="icon" type="image/jpg" href="../images/icon/icon.jpg">
     <link rel="stylesheet" href="../scripting/style/project.css">
-    <link rel="stylesheet" href="../scripting/style/common.css">
+    <link rel="icon" type="image/jpg" href="../images/icon/icon.jpg">
 </head>
 <body>
-
     <nav class="nav-bar-styling">
         <div class="nav-item">
             <div class="icon-bg">
@@ -20,7 +16,7 @@
             <div class="tooltip">Home</div>
         </div>
         <div class="nav-item">
-            <div class="icon-bg">
+            <div class="icon-bg active">
                 <a href="../webpages/projects.html"class="nav-item"><img src="../images/paintbrush.png"></a>
             </div>
             <div class="tooltip">Projects</div>
@@ -39,46 +35,140 @@
         </div>
         <div class="nav-item">
             <div class="icon-bg">
-                <a href="../webpages/email.html"class="nav-item"><img src="../images/mail.png"></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=athersonfrank5@gmail.com" target="_blank"><img src="../images/mail.png"></a>
             </div>
             <div class="tooltip">Mail</div>
         </div>
     </nav>
-
-
-
-    <div class="container">
-        <h1 class="title">MyProjects</h1>
-        <h1 class="title">Underwater Portfolio</h1>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="../images/img.png" alt="Project 1">
-                </div>
-                <h3 class="project-title">Project One</h3>
-                <p class="project-description">This is the first project in the portfolio showcasing web design expertise.</p>
-                <a href="#" class="visit-button">Visit Project</a>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="../images/project2.jpg" alt="Project 2">
-                </div>
-                <h3 class="project-title">Project Two</h3>
-                <p class="project-description">This project highlights advanced UI/UX design elements.</p>
-                <a href="#" class="visit-button">Visit Project</a>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="../images/project3.jpg" alt="Project 3">
-                </div>
-                <h3 class="project-title">Project Three</h3>
-                <p class="project-description">A full-stack development project demonstrating database integration.</p>
-                <a href="#" class="visit-button">Visit Project</a>
-            </div>
+  <div class="stars-container"></div>
+  <div class="planet" id="planet1"></div>
+  <div class="planet" id="planet2"></div>
+  
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/api/placeholder/400/300" alt="Project 1">
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">Cosmic Dashboard</h2>
+        <p class="project-description">A real-time analytics dashboard with dark mode and interactive charts. Features responsive design and live data updates with advanced visualization capabilities.</p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">D3.js</span>
         </div>
+      </div>
     </div>
 
-    <script src="../scripting/scripts/project.js"></script>
-    <script src="../scripting/scripts/common.js"></script>
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/api/placeholder/400/300" alt="Project 2">
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">Nebula Social</h2>
+        <p class="project-description">Social media platform with real-time messaging, story features, and AI-powered content recommendations. Includes advanced user engagement analytics.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Vue.js</span>
+          <span class="tech-tag">Firebase</span>
+          <span class="tech-tag">TensorFlow</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/api/placeholder/400/300" alt="Project 3">
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">Stellar E-commerce</h2>
+        <p class="project-description">Modern e-commerce platform with AR product preview, AI recommendations, and seamless checkout process. Features integrated inventory management.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">Stripe</span>
+          <span class="tech-tag">Three.js</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/api/placeholder/400/300" alt="Project 4">
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">Galaxy Game</h2>
+        <p class="project-description">Multiplayer space exploration game with procedurally generated worlds and real-time physics. Includes advanced networking and particle systems.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Unity</span>
+          <span class="tech-tag">C#</span>
+          <span class="tech-tag">Photon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Create stars
+    function createStars() {
+      const container = document.querySelector('.stars-container');
+      for (let i = 0; i < 200; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.width = Math.random() * 3 + 'px';
+        star.style.height = star.style.width;
+        star.style.left = Math.random() * 100 + 'vw';
+        star.style.top = Math.random() * 100 + 'vh';
+        star.style.animationDelay = Math.random() * 2 + 's';
+        container.appendChild(star);
+      }
+    }
+
+    // Create shooting stars
+    function createShootingStars() {
+      const container = document.querySelector('.stars-container');
+      setInterval(() => {
+        const star = document.createElement('div');
+        star.className = 'shooting-star';
+        star.style.left = Math.random() * 100 + 'vw';
+        star.style.top = Math.random() * 30 + 'vh';
+        container.appendChild(star);
+        
+        setTimeout(() => {
+          star.remove();
+        }, 3000);
+      }, 2000);
+    }
+
+    // Scroll reveal animation
+    function checkScroll() {
+      const cards = document.querySelectorAll('.project-card');
+      
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (cardTop < windowHeight * 0.85) {
+          card.classList.add('visible');
+        }
+      });
+    }
+
+    // Parallax effect for planets
+    document.addEventListener('mousemove', (e) => {
+      const planet1 = document.getElementById('planet1');
+      const planet2 = document.getElementById('planet2');
+      
+      const mouseX = e.clientX / window.innerWidth - 0.5;
+      const mouseY = e.clientY / window.innerHeight - 0.5;
+      
+      planet1.style.transform = `translate(${mouseX * 30}px, ${mouseY * 30}px)`;
+      planet2.style.transform = `translate(${mouseX * -40}px, ${mouseY * -40}px)`;
+    });
+
+    // Initialize
+    createStars();
+    createShootingStars();
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Check initial state
+  </script>
 </body>
 </html>

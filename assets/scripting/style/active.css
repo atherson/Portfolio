@@ -1,0 +1,12 @@
+/* Active Nav Item (Underline Effect) */
+.nav-item .icon-bg.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Adds space above the underline */
+    transform: translateX(-50%);
+    width: 30%; /* Adjust width as needed */
+    height: 3px; /* Thickness of the underline */
+    background-color: rgb(136, 255, 0); /* Change color to match your theme */
+    border-radius: 5px;
+}

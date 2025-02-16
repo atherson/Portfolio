@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atherson Portfolio</title>
-    <link rel="stylesheet" href="assets/scripting/style/style.css">
-    <link rel="stylesheet" href="assets/scripting/style/lamp.css">
+    <link rel="stylesheet" href="assets/scripting/style/main.css">
+    <link rel="stylesheet" href="assets/scripting/style/common.css">
     <link rel="icon" type="image/jpg" href="assets/images/icon/icon.jpg">
 </head>
 <body>
     <nav class="nav-bar-styling">
-        <a href="index.html">
-            <div class="nav-item">
-                <div class="icon-bg">
-                    <a href="index.html"class="nav-item"><img src="assets/images/home.png"></a>
-                </div>
-                <div class="tooltip">Home</div>
+        <div class="nav-item">
+            <div class="icon-bg active">
+                <a href="index.html"class="nav-item"><img src="assets/images/home.png"></a>
             </div>
-        </a>
-
-        <a href="assets/webpages/projects.html">
-            <div class="nav-item">
-                <div class="icon-bg">
-                    <a href="assets/webpages/projects.html"class="nav-item"><img src="assets/images/paintbrush.png"></a>
-                </div>
-                <div class="tooltip">Projects</div>
-            </div>
-        </a>
-
-        <a href="assets/webpages/store.html">
-            <div class="nav-item">
-                <div class="icon-bg">
-                    <a href="assets/webpages/store.html"class="nav-item"><img src="assets/images/shopping-cart.png"></a>
-                </div>
-                <div class="tooltip">Shop</div>
-            </div>
-        </a>
-
-        <a href="assets/webpages/about_me.html">
-            <div class="nav-item">
-                <div class="icon-bg">
-                    <a href="assets/webpages/about_me.html"class="nav-item"><img src="assets/images/user.png"></a>
-                </div>
-                <div class="tooltip">About</div>
-            </div>
-        </a>
-
-        <a href="assets/webpages/email.html">
-            <div class="nav-item">
-                <div class="icon-bg">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=athersonfrank5@gmail.com&su=Inquiry&body=Hello Frank, I would like to ask about..." target="_blank" class="nav-item">
-                    <img src="assets/images/mail.png"></a>
-                </div>
-                <div class="tooltip">Mail</div>
-            </div>
-        </a>
-        
-    </nav>
-
-    <div class="lamp-container">
-        <div class="lamp"></div>
-        <div class="lamp-light"></div>
-    </div>
-    
-        <div class="intro-card">
-            <p>Hey, I'm Atherson</p>
-            <p>I'm a Software Engineer</p>
-            <p>currently at ...</p>
+            <div class="tooltip">Home</div>
         </div>
-        <script src="../scripting/scripts/common.js"></script>
+        <div class="nav-item">
+            <div class="icon-bg">
+                <a href="assets/webpages/projects.html"class="nav-item"><img src="assets/images/paintbrush.png"></a>
+            </div>
+            <div class="tooltip">Projects</div>
+        </div>
+        <div class="nav-item">
+            <div class="icon-bg">
+                <a href="assets/webpages/store.html"class="nav-item"><img src="assets/images/shopping-cart.png"></a>
+            </div>
+            <div class="tooltip">Shop</div>
+        </div>
+        <div class="nav-item">
+            <div class="icon-bg">
+                <a href="assets/webpages/about_me.html"class="nav-item"><img src="assets/images/user.png"></a>
+            </div>
+            <div class="tooltip">About</div>
+        </div>
+        <div class="nav-item">
+            <div class="icon-bg">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=athersonfrank5@gmail.com" target="_blank"><img src="assets/images/mail.png"></a>
+            </div>
+            <div class="tooltip">Mail</div>
+        </div>
+    </nav>
+  <div class="scene">
+    <div class="sun">
+      <div class="sun-rays"></div>
+    </div>
+    <div class="ground"></div>
+    <div class="rocket">
+      <div class="rocket-body">
+        <div class="window"></div>
+      </div>
+      <div class="fins left-fin"></div>
+      <div class="fins right-fin"></div>
+      <div class="exhaust"></div>
+    </div>
+    <div class="info-overlay">
+      <h1>Hey, I'm Atherson</h1>
+      <p>a Software Engineer</p>
+      <p>currently at</p>
+    </div>
+  </div>
+
+  <script src="assets/scripting/scripts/script.js"></script>
 </body>
 </html>
