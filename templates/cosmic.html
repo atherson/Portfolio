@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Voyager - Space Theme Template</title>
+  <style>
+    :root {
+      --primary: #1a1e4c;
+      --secondary: #5c59a4;
+      --accent: #c056c8;
+      --text: #e6ecff;
+      --dark: #0a0c26;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    body {
+      background-color: var(--dark);
+      color: var(--text);
+      background-image: url('/api/placeholder/1920/1080');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    
+    header {
+      background: linear-gradient(180deg, rgba(26,30,76,0.9) 0%, rgba(26,30,76,0.7) 100%);
+      padding: 1.5rem 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(192, 86, 200, 0.5);
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .nav-link {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      color: var(--accent);
+    }
+    
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(10,12,38,0.2) 0%, rgba(10,12,38,0.8) 100%);
+    }
+    
+    .hero-content {
+      text-align: center;
+      z-index: 10;
+      padding: 2rem;
+      max-width: 800px;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, var(--text), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--secondary), var(--accent));
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(192, 86, 200, 0.4);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(192, 86, 200, 0.6);
+    }
+    
+    .features {
+      padding: 5rem 0;
+      background-color: rgba(10, 12, 38, 0.9);
+    }
+    
+    .features-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .feature-card {
+      background: linear-gradient(135deg, rgba(36,40,86,0.8) 0%, rgba(26,30,76,0.8) 100%);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(92, 89, 164, 0.2);
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    
+    .feature-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+    
+    .feature-desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .feature-card {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">COSMIC VOYAGER</div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Features</a>
+          <a href="#" class="nav-link">Gallery</a>
+          <a href="#" class="nav-link">Pricing</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Explore the Universe with Cosmic Voyager</h1>
+      <p class="subtitle">Create stunning space-themed websites that capture the wonder and beauty of the cosmos. Perfect for astronomy blogs, sci-fi enthusiasts, and space agencies.</p>
+      <a href="#" class="cta-button">Start Your Journey</a>
+    </div>
+  </section>
+  
+  <section class="features">
+    <div class="container">
+      <h2 class="features-title">Stellar Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">★</div>
+          <h3 class="feature-title">Cosmic Animations</h3>
+          <p class="feature-desc">Breathtaking particle effects that mimic stars, nebulae, and galaxies to create an immersive experience for your visitors.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☄️</div>
+          <h3 class="feature-title">Space Gallery</h3>
+          <p class="feature-desc">Beautiful lightbox galleries optimized for showcasing high-resolution astronomy photography and artwork.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title">Rocket-Fast Loading</h3>
+          <p class="feature-desc">Optimized performance ensures your space-themed content loads at light speed on all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

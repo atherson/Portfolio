@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <!-- City background with gradient -->
+  <linearGradient id="cityGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#1a2530;stop-opacity:1" />
+  </linearGradient>
+  <rect width="1200" height="900" fill="url(#cityGradient)"/>
+  
+  <!-- City skyline silhouette -->
+  <path d="M0,400 L50,400 L50,350 L100,350 L100,380 L150,380 L150,320 L200,320 L200,370 
+           L250,370 L250,300 L300,300 L300,350 L350,350 L350,250 L400,250 L400,350 
+           L450,350 L450,280 L500,280 L500,350 L550,350 L550,230 L600,230 L600,350 
+           L650,350 L650,300 L700,300 L700,200 L750,200 L750,350 L800,350 L800,250 
+           L850,250 L850,300 L900,300 L900,180 L950,180 L950,300 L1000,300 L1000,220 
+           L1050,220 L1050,300 L1100,300 L1100,250 L1150,250 L1150,300 L1200,300 
+           L1200,900 L0,900 Z" fill="#0a1420"/>
+  
+  <!-- Windows in buildings -->
+  <g fill="#f7d065" opacity="0.7">
+    <!-- Building 1 -->
+    <rect x="60" y="360" width="10" height="10"/>
+    <rect x="80" y="360" width="10" height="10"/>
+    <rect x="60" y="380" width="10" height="10"/>
+    <rect x="80" y="380" width="10" height="10"/>
+    
+    <!-- Building 2 -->
+    <rect x="110" y="340" width="10" height="10"/>
+    <rect x="130" y="340" width="10" height="10"/>
+    <rect x="110" y="360" width="10" height="10"/>
+    <rect x="130" y="360" width="10" height="10"/>
+    
+    <!-- Building 3 -->
+    <rect x="160" y="330" width="10" height="10"/>
+    <rect x="180" y="330" width="10" height="10"/>
+    <rect x="160" y="350" width="10" height="10"/>
+    <rect x="180" y="350" width="10" height="10"/>
+    
+    <!-- More windows for other buildings -->
+    <rect x="260" y="310" width="10" height="10"/>
+    <rect x="280" y="310" width="10" height="10"/>
+    <rect x="260" y="330" width="10" height="10"/>
+    <rect x="280" y="330" width="10" height="10"/>
+    
+    <rect x="360" y="260" width="10" height="10"/>
+    <rect x="380" y="260" width="10" height="10"/>
+    <rect x="360" y="280" width="10" height="10"/>
+    <rect x="380" y="280" width="10" height="10"/>
+    <rect x="360" y="300" width="10" height="10"/>
+    <rect x="380" y="300" width="10" height="10"/>
+    <rect x="360" y="320" width="10" height="10"/>
+    <rect x="380" y="320" width="10" height="10"/>
+    
+    <rect x="560" y="240" width="10" height="10"/>
+    <rect x="580" y="240" width="10" height="10"/>
+    <rect x="560" y="260" width="10" height="10"/>
+    <rect x="580" y="260" width="10" height="10"/>
+    <rect x="560" y="280" width="10" height="10"/>
+    <rect x="580" y="280" width="10" height="10"/>
+    <rect x="560" y="300" width="10" height="10"/>
+    <rect x="580" y="300" width="10" height="10"/>
+    <rect x="560" y="320" width="10" height="10"/>
+    <rect x="580" y="320" width="10" height="10"/>
+    
+    <rect x="710" y="210" width="10" height="10"/>
+    <rect x="730" y="210" width="10" height="10"/>
+    <rect x="710" y="230" width="10" height="10"/>
+    <rect x="730" y="230" width="10" height="10"/>
+    <rect x="710" y="250" width="10" height="10"/>
+    <rect x="730" y="250" width="10" height="10"/>
+    <rect x="710" y="270" width="10" height="10"/>
+    <rect x="730" y="270" width="10" height="10"/>
+    <rect x="710" y="290" width="10" height="10"/>
+    <rect x="730" y="290" width="10" height="10"/>
+    
+    <rect x="910" y="190" width="10" height="10"/>
+    <rect x="930" y="190" width="10" height="10"/>
+    <rect x="910" y="210" width="10" height="10"/>
+    <rect x="930" y="210" width="10" height="10"/>
+    <rect x="910" y="230" width="10" height="10"/>
+    <rect x="930" y="230" width="10" height="10"/>
+    <rect x="910" y="250" width="10" height="10"/>
+    <rect x="930" y="250" width="10" height="10"/>
+    <rect x="910" y="270" width="10" height="10"/>
+    <rect x="930" y="270" width="10" height="10"/>
+  </g>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="100" fill="#1a2530"/>
+  <rect x="50" y="35" width="200" height="30" rx="5" fill="#e74c3c"/>
+  <text x="150" y="57" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">METRO PULSE</text>
+  <rect x="700" y="35" width="80" height="30" rx="5" fill="#2c3e50"/>
+  <rect x="800" y="35" width="80" height="30" rx="5" fill="#2c3e50"/>
+  <rect x="900" y="35" width="80" height="30" rx="5" fill="#2c3e50"/>
+  <rect x="1000" y="35" width="80" height="30" rx="5" fill="#2c3e50"/>
+  <rect x="1100" y="35" width="80" height="30" rx="5" fill="#e74c3c"/>
+  <text x="1140" y="55" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">JOIN</text>
+  
+  <!-- Hero Section -->
+  <rect x="100" y="150" width="550" height="350" rx="0" fill="#f5f5f5"/>
+  <text x="150" y="230" font-family="Arial" font-size="42" fill="#2c3e50" font-weight="bold">MODERN SOLUTIONS</text>
+  <text x="150" y="280" font-family="Arial" font-size="42" fill="#e74c3c" font-weight="bold">FOR URBAN BUSINESS</text>
+  <text x="150" y="330" font-family="Arial" font-size="16" fill="#555555" width="450">A premium website template designed for corporate entities, financial services, and urban businesses that want to make a strong impression.</text>
+  <rect x="150" y="380" width="150" height="50" rx="5" fill="#e74c3c"/>
+  <text x="225" y="412" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">GET STARTED</text>
+  <rect x="320" y="380" width="150" height="50" rx="5" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="395" y="412" font-family="Arial" font-size="16" fill="#e74c3c" text-anchor="middle">LEARN MORE</text>
+  
+  <!-- Stats Section -->
+  <rect x="700" y="150" width="400" height="100" rx="5" fill="#34495e"/>
+  <text x="780" y="200" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">1000+</text>
+  <text x="780" y="225" font-family="Arial" font-size="14" fill="#ecf0f1" text-anchor="middle">HAPPY CLIENTS</text>
+  
+  <rect x="700" y="270" width="400" height="100" rx="5" fill="#34495e"/>
+  <text x="780" y="320" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">250+</text>
+  <text x="780" y="345" font-family="Arial" font-size="14" fill="#ecf0f1" text-anchor="middle">PROJECTS DONE</text>
+  
+  <rect x="700" y="390" width="400" height="100" rx="5" fill="#34495e"/>
+  <text x="780" y="440" font-family="Arial" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">15+</text>
+  <text x="780" y="465" font-family="Arial" font-size="14" fill="#ecf0f1" text-anchor="middle">YEARS EXPERIENCE</text>
+  
+  <!-- Features Section -->
+  <rect x="100" y="550" width="300" height="180" rx="5" fill="#ecf0f1"/>
+  <rect x="130" y="580" width="240" height="8" rx="4" fill="#e74c3c"/>
+  <text x="250" y="620" font-family="Arial" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">BUSINESS ANALYTICS</text>
+  
+  <rect x="450" y="550" width="300" height="180" rx="5" fill="#ecf0f1"/>
+  <rect x="480" y="580" width="240" height="8" rx="4" fill="#e74c3c"/>
+  <text x="600" y="620" font-family="Arial" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">FINANCIAL REPORTS</text>
+  
+  <rect x="800" y="550"

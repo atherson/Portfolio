@@ -1,27 +1,27 @@
 const products = [
   {
     id: 1,
-    title: "Space Helmet",
-    price: 299.99,
-    image: "/api/placeholder/280/200"
+    title: "Cosmic Voyage",
+    price: 89.99,
+    image: "../images/template_svg/cosmic-voyage-template.svg"
   },
   {
     id: 2,
-    title: "Gravity Boots",
-    price: 199.99,
-    image: "/api/placeholder/280/200"
+    title: "Eco Haven",
+    price: 89.99,
+    image: "../images/template_svg/eco-haven-template.svg"
   },
   {
     id: 3,
-    title: "Lunar Backpack",
-    price: 149.99,
-    image: "/api/placeholder/280/200"
+    title: "Metro Pulse",
+    price: 99.99,
+    image: "../images/template_images/urban_pulse.png"
   },
   {
     id: 4,
-    title: "Mars Survival Kit",
-    price: 499.99,
-    image: "/api/placeholder/280/200"
+    title: "Business-Pro",
+    price: 149.99,
+    image: "../images/template_svg/businesspro-logo.svg"
   }
 ];
 

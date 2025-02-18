@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Background Layer -->
+  <rect width="400" height="120" fill="#f7fafc" rx="8" ry="8"/>
+  
+  <!-- Logo Symbol -->
+  <g transform="translate(30, 25)">
+    <!-- Abstract Building/Growth Symbol -->
+    <path d="M40,70 L20,50 L35,35 L50,50 L80,20 L95,35 L65,65 L65,70 Z" fill="#2c5282" stroke="#1a202c" stroke-width="1.5"/>
+    <path d="M40,70 L65,70 L65,65 L50,50 L40,60 Z" fill="#4a5568" stroke="#1a202c" stroke-width="1.5"/>
+    <circle cx="35" cy="35" r="5" fill="#ecc94b"/>
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(120, 55)">
+    <text font-family="Arial, sans-serif" font-weight="700" font-size="40" fill="#2c5282">
+      <tspan>Business</tspan>
+      <tspan fill="#ecc94b">Pro</tspan>
+    </text>
+    <text font-family="Arial, sans-serif" font-weight="400" font-size="14" fill="#4a5568" x="5" y="25">
+      PREMIUM TEMPLATE
+    </text>
+  </g>
+  
+  <!-- Accent Line -->
+  <line x1="30" y1="85" x2="370" y2="85" stroke="#ecc94b" stroke-width="2" stroke-linecap="round"/>
+</svg>
